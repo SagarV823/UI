@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign Up</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "C:/Users/765412/Desktop/UI/CSS/stylecss.css" />
+</head>
+<body>
+	
+<div id="wrapper">
+  <div class="main-content">
+    <div class="header">
+      <img src="https://i.imgur.com/zqpwkLQ.png" />
+    </div>
+    <div class="l-part">
+      <input type="text" placeholder="Username" class="input-1" />
+      <div class="overlap-text">
+        <input type="password" placeholder="Password" class="input-2" />
+        <a href="#">Forgot?</a>
+      </div>
+      <input type="button" value="Log in" class="btn" />
+    </div>
+  </div>
+  <div class="sub-content">
+    <div class="s-part">
+      Don't have an account?<a href="#">Sign up</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

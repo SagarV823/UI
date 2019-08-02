@@ -1,0 +1,63 @@
+.navbar-inverse{
+    
+    background-color: rgb(73, 20, 158);
+}
+.navbar-brand{
+    font-family: Forte;
+    font-size: 30px;
+    color: aliceblue;
+}
+.navigation{
+    font-size: 20px;
+    color: white;
+}
+.card-title{
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Segoe UI';
+}
+.input-1,
+.input-2,
+.input-3,
+.input-4 {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+#wrapper {
+    width: 500px;
+    height: 80%;
+    overflow: hidden;
+    border: 0px solid #000;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  
+  .main-content {
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;	
+    background-color: rgb(250, 253, 204);
+    border: 2px solid #e6e6e6;
+    padding: 10px 30px ;
+  }
+  
+  .header {
+    border: 0px solid #000;
+    margin-bottom: 20px;
+    align: center;
+  }
+
+  .uploadbtn {
+    width: 100%;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    padding: 5px 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }

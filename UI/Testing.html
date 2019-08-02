@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>User Register</title>
+
+<style>
+body, html {
+  height: 100%;
+}
+
+.jumbotron {
+	background: rgba(204, 204, 204, 0.6);
+}
+
+.form-control {
+	width: 80%;
+}
+
+.form-rounded {
+	border-radius: 3rem;
+}
+
+.funkyradio div {
+  clear: both;
+  
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #337ab7;
+  font-weight: normal;
+}
+
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: white;
+}
+
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("https://www.si3.ae/wp-content/uploads/2018/08/Web-design-development-dubai.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+</head>
+<body>
+	
+	<div class="bg">
+	
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="homePage">Freelancer Website</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="aboutUs">About Us</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<a href="lancerLoginPage" class="btn btn-lg btn-primary" style="color:white; text-align:right; float:right; margin-right: 10px;">Login Here</a>
+	<p style="color:white; font-size: 18px; text-align:right; float:right; margin-right: 10px; margin-top: 11px;">Already Registered ?</p>
+	
+	
+	<div class="container">
+		<h1 class="text-center" style="color:white;">Lancer Registration Page</h1>
+		<div class="jumbotron">
+		<form action="registerLancer">
+		<div class="row">
+			<div class="col-md-6">
+  				<div class="form-group">
+  					<br> <br> <br>
+    				<label for="fname" style="color: #2F4F4F">First Name:</label>
+    				<input type="text" class="form-control form-rounded" id="fname" name="firstName" placeholder="First Name" required>
+  				<h4 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${statusfirstname} </h4></div>
+  				<div class="form-group">
+    				<label for="lname" style="color: #2F4F4F">Last Name:</label>
+    				<input type="text" class="form-control form-rounded" id="lname" name="lastName" placeholder="Last Name" required>
+  				<h4 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${statuslastname} </h4></div>
+  				<div class="form-group">
+    				<label for="email" style="color: #2F4F4F">Email address:</label>
+    				<input type="email" class="form-control form-rounded" id="email" name="emailId" placeholder="Email" required>
+  				<h4 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${statusemail} </h4></div>
+  				<div class="form-group">
+    				<label for="email" style="color: #2F4F4F">Phone Number:</label>
+    				<input type="text" class="form-control form-rounded" id="email" name="phoneNumber" placeholder="Phone Number" required>
+  				<h4 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${statusphone} </h4></div>
+  				<div class="form-group">
+    				<label for="pwd" style="color: #2F4F4F">Password:</label>
+    				<input type="password" class="form-control form-rounded" id="pwd" name="password" placeholder="Password" required>
+  				</div>
+  		</div>
+  			<div class="col-md-6">
+  				<div class="row"> 
+  				<h2 style="color: #2F4F4F; text-align:center;"><u>Select Skills</u></h2>
+  				</div>
+  				
+  				<div class="row">
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+  						<input type="checkbox" name="skill1" id="checkbox1" value="PHP" />
+  						<label for="checkbox1">PHP</label>
+  					</div>
+  				</div>
+  				</div>
+  				
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+ 						<input type="checkbox" name="skill2" id="checkbox2" value="HTML" />
+ 						<label for="checkbox2">HTML</label>
+ 					</div>
+  				</div>
+ 				</div>
+ 				</div>
+ 				
+ 				<div class="row">
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+  						<input type="checkbox" name="skill3" id="checkbox3" value="JavaScript" />
+  						<label for="checkbox3">JavaScript</label>
+  					</div>
+  				</div>
+  				</div>
+  				
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+ 						<input type="checkbox" name="skill4" id="checkbox4" value="MySQL" />
+ 						<label for="checkbox4">MySQL</label>
+ 					</div>
+  				</div>
+ 				</div>
+ 				</div>
+ 				
+ 				<div class="row">
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+  						<input type="checkbox" name="skill5" id="checkbox5" value="Java" />
+  						<label for="checkbox5">Java</label>
+  					</div>
+  				</div>
+  				</div>
+  				
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+ 						<input type="checkbox" name="skill6" id="checkbox6" value="Python" />
+ 						<label for="checkbox6">Python</label>
+ 					</div>
+  				</div>
+ 				</div>
+ 				</div>
+ 				
+ 				<div class="row">
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+  						<input type="checkbox" name="skill7" id="checkbox7" value=".NET" />
+  						<label for="checkbox7">.NET</label>
+  					</div>
+  				</div>
+  				</div>
+  				
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+ 						<input type="checkbox" name="skill8" id="checkbox8" value="Angular.js" />
+ 						<label for="checkbox8">Angular.js</label>
+ 					</div>
+  				</div>
+ 				</div>
+ 				</div>
+ 				
+ 				<div class="row">
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+  						<input type="checkbox" name="skill9" id="checkbox9" value="Unity 3D" />
+  						<label for="checkbox9">Unity 3D</label>
+  					</div>
+  				</div>
+  				</div>
+  				
+  				<div class="col-md-6">
+  				<div class="funkyradio">
+  					<div class="funkyradio-primary">
+ 						<input type="checkbox" name="skill10" id="checkbox10" value="Laravel" />
+ 						<label for="checkbox10">Laravel</label>
+ 					</div>
+  				</div>
+ 				</div>
+ 				</div>
+				<h4 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${statusskill} </h4>
+  			</div>
+  		</div>
+  		<br>
+  		<hr width="50%">
+  		
+  		<button type="submit" class="btn btn-success btn-lg center-block form-rounded" style="width: 150px;">Register</button>
+  		<h2 style="color:#BA2525; text-align:center; float:center;">&nbsp;&nbsp;${Registerstatus} </h2>
+  		
+  		</form>
+  		
+		</div>
+		
+	</div>
+	
+	</div>
+
+</body>
+</html>
